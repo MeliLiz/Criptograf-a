@@ -188,7 +188,7 @@ def des_encrypt(text, key):
         block = text[i:i + 64]
         encrypted_bits += des_encrypt_block(block, subkeys)
 
-    return bits_to_text(encrypted_bits)
+    return encrypted_bits
 
 def des_encrypt_block(block, keys):
     """ Proceso completo de cifrado DES en 16 rondas para un bloque de 64 bits. """
@@ -226,7 +226,7 @@ plaintext = "Hola Mundo"
 key = "clave123"
 
 # Cifrar el texto
-ciphertext_bits = text_to_bits(des_encrypt(plaintext, key))
+ciphertext_bits = des_encrypt(plaintext, key)
 
 # Convertir los bits cifrados a hexadecimal para mostrar un resultado legible
 ciphertext_hex = bits_to_hex(ciphertext_bits)
