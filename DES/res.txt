@@ -1,0 +1,133 @@
+ 1. Claves débiles
+Key: 0101010101010101
+Texto cifrado: ffe9d0babbaa01f82882527e14bd4d5e
+Key: fefefefefefefefe
+Texto cifrado: 852d7a2ebee8e95f92013072461b2844
+Key: 1f1f1f1f1f1f1f1
+Texto cifrado: 38fb55d08071512d79f686db1d28a9f3
+Key: e0e0e0e0e0e0e0e0
+Texto cifrado: 2653b79c030ced30e748c080e063f63a
+
+ 2. Claves semi-débiles
+Key: 01fe01fe01fe01fe
+Texto cifrado: ff3aaf98f8dc4c0c6af5c79ef4a54751
+Key: fe01fe01fe01fe01
+Texto cifrado: 38dde9b1af46f471fa38a5f3c0ffd2b7
+Key: 1fe01fe01fe01fe0
+Texto cifrado: 6229634f83505ff8fab8bfd3d8413926
+Key: e01fe01fe01fe01f
+Texto cifrado: 0e0bb2619a8f928116f82ff48c1361df
+Key: 01e001e001e001e0
+Texto cifrado: 5ad8ccfe32e262d5f5d8b0a6071636b4
+Key: e001e001e001e001
+Texto cifrado: c5d60c5a0bcc87178c9eab5def64dac0
+Key: 1ffe1ffe1ffe1ffe
+Texto cifrado: dbc9ac930dd3b3b25c15ff7753806bc4
+Key: fe1ffe1ffe1ffe1f
+Texto cifrado: 454f408ea74b247857b49f31ba4b8610
+Key: 011f011f011f011f
+Texto cifrado: e7abfc1a7768432b82c2452d198592dc
+Key: 1f011f011f011f01
+Texto cifrado: d3a66a3d1514bfc6d9ae931088bed241
+Key: e0fee0fee0fee0fe
+Texto cifrado: 2587b1bf385e9f97e6d37f77ff7f780b
+Key: fee0fee0fee0fee0
+Texto cifrado: 274d4cb42308b4e176a3c50bf5f4ac51
+
+ 3. Posibles claves débiles
+Key: 1f1f01010e0e0101
+Texto cifrado: fc0b7bb194e547d0a6367cdc8c2b9e99
+Key: e00101e0f10101f1
+Texto cifrado: da5d4022535a47f8611981be80e36abc
+Key: 011f1f01010e0e01
+Texto cifrado: 4a16d36632596093386db64b00c35d75
+Key: fe1f01e0fe0e01f1
+Texto cifrado: cefde471f07f51de4a36ad5e10641843
+Key: 1f01011f0e01010e
+Texto cifrado: 15768802c78f8306b6e7ab53e571d5d3
+Key: fe011fe0fe010ef1
+Texto cifrado: 9c7691d6ce196e9b560bf8c7f160902f
+Key: 01011f1f01010e0e
+Texto cifrado: c41da6169adb3b0ec0052d6361108b00
+Key: e01f1fe0f10e0ef1
+Texto cifrado: 265c8ba14c2927f9c4db581f5904b654
+Key: fe0101fefe0101fe
+Texto cifrado: 3e23a570e2f3eda6cd492faf7c66455a
+Key: e0e00101f1f10101
+Texto cifrado: d317c8393269ba3e6fc03cbe396841c3
+Key: e01f01fef10e01fe
+Texto cifrado: 40e467f7e802601ef28a546d62d1bee7
+Key: fefe0101fefe0101
+Texto cifrado: ec26f0cee2e8722cdda315dc550954be
+Key: e0011ffef1010efe
+Texto cifrado: 41289d257b8b28b96566261cff3d86db
+Key: fee01f01fef10e01
+Texto cifrado: 3e381423a0076f51f055ffda51917820
+Key: fe1f1ffefe0e0efe
+Texto cifrado: 796ea449cad6d2cb1f8950f0e8d24173
+Key: e0fe1f01f1fe0e01
+Texto cifrado: 458733bf1db0974c1ffe6d72a955bbb4
+Key: fee0011ffef1010e
+Texto cifrado: c22371392c5cbf6fa938d137dda34dad
+Key: 1ffe01e00efe01f1
+Texto cifrado: 6bb25362dc3836d93cae1328ec5a8589
+Key: e0fe011ff1fe010e
+Texto cifrado: 892889a8b653b8c157163ae6172e62a2
+Key: 01fe1fe001fe0ef1
+Texto cifrado: 9d3fccc729a7c9293895d340067cbe69
+Key: e0e01f1ff1f10e0e
+Texto cifrado: 4f55a9193c6a0ca2aca537c5474e0e65
+Key: 1fe001fe0ef101fe
+Texto cifrado: f48345f00929c9044d7f89bf84c8d814
+Key: fefe1f1ffefe0e0e
+Texto cifrado: 34b7a8655609f3bf857b583bfd79d702
+Key: 01e01ffe01f10efe
+Texto cifrado: ad8589467c1a144645a1963e918eb10e
+Key: fe1fe001fe0ef101
+Texto cifrado: 3c23d674c806ea218e3119ad1d8f21ba
+Key: 0101e0e00101f1f1
+Texto cifrado: a128c9bc8d8be86cf5849c28b10fd463
+Key: e01ffe01f10efe01
+Texto cifrado: 318f6fbb6750ac3e1b153abc91099d8e
+Key: 1f1fe0e00e0ef1f1
+Texto cifrado: 2feebf567e53991c599509e3fb27ede1
+Key: fe01e01ffe01f10e
+Texto cifrado: 45b8859436dcf82a667cab86420cc45b
+Key: 1f01fee00e0ef1f1
+Texto cifrado: cfb42df2321521681eb878b1fc3a9abe
+Key: e001fe1ff101fe0e
+Texto cifrado: 579698aba8eff75b471873e73e30b00e
+Key: 011ffee0010efef1
+Texto cifrado: 68b97ff1c812f1b9f4ed24a0cf3c2f75
+Key: 1f01e0fe0e01f1fe
+Texto cifrado: 3e3d9bb4d2fb67ca52c1933623770bd7
+Key: 01e0e00101e1e101
+Texto cifrado: 92ef41510d55e5a7e0a5fe95f1f8bd8d
+Key: 011fe0fe010ef1fe
+Texto cifrado: 008c86e04f55bf35e504ddb72609a0b2
+Key: 1ffee0010efef001
+Texto cifrado: 58f5a33b82e3661bccaed65f3d4d59b0
+Key: 0101fefe0101fefe
+Texto cifrado: 249e73f9797a985ba2c1375f54c78610
+Key: 1ffee0010ef1fe01
+Texto cifrado: 58f5a33b82e3661bccaed65f3d4d59b0
+Key: 1f1ffefe0e0efefe
+Texto cifrado: 3af2d7fff5a08e98ed5a16428d9e9374
+Key: 01fefe0101fefe01
+Texto cifrado: 8c77c5213a3f5036bc3094961a99ac1c
+Key: 1fe0e0f10ef1f10e
+Texto cifrado: 70d24c62ab5ee3619de0e05bc5e92ed9
+Key: fefee0e0fefef1f1
+Texto cifrado: 4d1d66a44dff54f2928c56582b8aaa8e
+Key: 01fee01f01fef10e
+Texto cifrado: f28b40a51de8c9e9a50e1fa3a48d9882
+Key: e0fefee0f1fefef1
+Texto cifrado: f259e4107b5948fcc2bc567d80c2a528
+Key: 01e0fe1f01f1fe0e
+Texto cifrado: ab7a0c1ad527d84f70a3d5914599de1c
+Key: fee0e0fefef1f1fe
+Texto cifrado: 4bc2043316bfa46a7a1425d801c6af9d
+Key: 1ffefe1f0efefe0e
+Texto cifrado: 7445142a117be79d937094177b3647f6
+Key: e0e0fefef1f1fefe
+Texto cifrado: 4e741e71ad6720bfd59b7aceec62c5a0
