@@ -5,7 +5,7 @@ import random
 
 def jacobi(a, n):
     if n <= 0 or n % 2 == 0:
-        raise ValueError("n debe ser un número impar positivo")
+        raise ValueError("n must be an odd positive number")
     result = 1
     a = a % n
     while a != 0:
