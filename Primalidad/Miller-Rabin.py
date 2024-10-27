@@ -14,7 +14,6 @@ def MillerRabin(n, times):
     else:
         # Calculate r such that n-1 = 2^s * r
         r, s = get_r_s(n)
-        print("r:", r, "s:", s)
         for i in range(times):
             a = random.randint(2, n-2) # 2 <= a <= n-2
             y = pow(a, r, n)

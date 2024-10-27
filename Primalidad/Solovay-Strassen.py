@@ -29,8 +29,6 @@ def test(n, times):
             if r != 1 and r != n-1:
                 return False
             s = jacobi(a, n)
-            #print("Jacobi", s%n)
-            #print("r", r% n)
             # If r is not congruent to s mod n, it is composite
             if r % n != s % n:
                 return False
