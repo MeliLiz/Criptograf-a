@@ -14,24 +14,18 @@ def MillerRabin(n, times):
     else:
         # Calculate r such that n-1 = 2^s * r
         r, s = get_r_s(n)
-        #print("r:", r, "s:", s)
+        print("r:", r, "s:", s)
         for i in range(times):
             a = random.randint(2, n-2) # 2 <= a <= n-2
             y = pow(a, r, n)
-            #print("a:", a, "y:", y)
             if y != 1 and y != n-1:
-                #print("y != 1 and y != n-1")
                 j = 1
                 while j <= s-1 and y != n-1:
-                    #print("j:", j)
                     y = pow(y, 2, n)
-                    #print("y:", y)
                     if y == 1:
-                        #print("y == 1")
                         return False
                     j += 1
                 if y != n-1:
-                    #print("y != n-1")
                     return False
         return True
     
