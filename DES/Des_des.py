@@ -73,11 +73,11 @@ def xor(block1, block2):
     return result
 
 #Apply the S-boxes on a 48-bit block
-def sbox_substitution(block):
+def apply_sbox(block):
     result = []
     for i in range(8):
         part = block[i * 6:(i + 1) * 6]
-        row = part[0] * 2 + part[5]
+        row = part[0] * 2 + part[5] 
         col = part[1] * 8 + part[2] * 4 + part[3] * 2 + part[4]
         value = S_BOXES[i][row][col]
         to_add = []
@@ -90,7 +90,7 @@ def sbox_substitution(block):
 def feistel(right, key):
     expanded_half = permutation(right, EXPANSION) # Expand the 32-bit half to 48 bits
     xor_result = xor(expanded_half, key)  
-    substituted = sbox_substitution(xor_result)  #Substitution with S-boxes
+    substituted = apply_sbox(xor_result)  #Substitution with S-boxes
     return permutation(substituted, P_PERMUTATION_TABLE) 
 
 #Apply a Feistel round, receives the left half, right half and the key
@@ -164,6 +164,7 @@ def hex_to_bits(hex_str):
 ##################################### DES #####################################
 
 ############## Encryption ##############
+
 #Encrypt a 64-bit block (16 rounds)
 def encrypt_block(block, keys):
     permuted_block = permutation(block, INITIAL_PERMUTATION)
@@ -176,7 +177,7 @@ def encrypt_block(block, keys):
     final_block = permutation(right + left, FINAL_PERMUTATION)
     return final_block
 
-def des_encrypt(text, key):
+def encrypt(text, key): # Receives text, not bits
     text = text_to_bits(pad(text))
     key = text_to_bits(key)
     #print("Texto en bits:", (text))
@@ -203,7 +204,7 @@ def decrypt_block(block, keys):
     final_block = permutation(right + left, FINAL_PERMUTATION)
     return final_block
 
-def des_decrypt(bits, key):
+def decrypt(bits, key): # Receives bits, not text
     key = text_to_bits(key)
     subkeys = get_subkeys(key)
 
@@ -222,16 +223,16 @@ if __name__ == '__main__':
     key = "llavesct" #8 characters key
 
     #Encrypt
-    ciphertext_bits = des_encrypt(plaintext, key)
-    print("Ciphertext bits:")
+    ciphertext_bits = encrypt(plaintext, key)
+    print("Texto cifrado en bits:")
     for bit in ciphertext_bits:
         print(bit, end="")
     print()
 
     #Get the hexadecimal representation
     ciphertext_hex = bits_to_hex(ciphertext_bits)
-    print("Texto cifrado (hexadecimal):", ciphertext_hex)
+    print("Texto cifrado hexadecimal:", ciphertext_hex)
 
     #DEcrypt the bits gotten from the encryption
-    decrypted_text = des_decrypt(ciphertext_bits, key)
+    decrypted_text = decrypt(ciphertext_bits, key)
     print("Texto descifrado:", decrypted_text)
