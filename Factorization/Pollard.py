@@ -23,4 +23,4 @@ if __name__ == "__main__":
     if factores:
         print("Factores encontrados:", factores)
     else:
-        print("No se encontraron factores. Intenta de nuevo.")
+        print("No se encontraron factores")
