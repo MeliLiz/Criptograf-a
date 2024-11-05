@@ -16,7 +16,6 @@ def inv_mod_p(a, p): # Find the inverse of a mod p
     return pow(a, -1, p)
 
 def square_roots(a, p):
-    
     if legendre(a, p) != 1:
         return None  #a is not a quadratic residue mod p
 
