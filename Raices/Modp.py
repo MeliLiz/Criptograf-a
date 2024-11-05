@@ -18,7 +18,7 @@ def inv_mod_p(a, p): # Find the inverse of a mod p
 def square_roots(a, p):
     
     if legendre(a, p) != 1:
-        return None  # a no tiene raíz cuadrada módulo p
+        return None  #a is not a quadratic residue mod p
 
     #Find a quadratic non-residue (b/p) = -1
     b = random.randint(2, p - 1) 
@@ -42,10 +42,10 @@ def square_roots(a, p):
 
 if __name__ == '__main__':
     print("Find the square roots modulo a prime p")
-    p = int(input("Enter a prime number: "))
-    a = int(input("Enter a number: "))   
+    p = int(input("Enter a prime number n: "))
+    a = int(input("Enter a number a: "))   
     roots = square_roots(a, p)
     if roots:
-        print("The roots of ", a, "mod", p, "are", roots)
+        print("The roots of", a, "mod", p, "are", roots[0], "and", roots[1])
     else:
         print(a," doesn't have a square root mod", p)
