@@ -100,18 +100,20 @@ def sqrt_mod_composed(n, mod):
         if not roots:
             print("No hay raíces cuadradas de", n, "módulo", factor)
             return [] 
-        print(roots)
+        # print(roots)
         solutions.append(roots[0])
 
     x = chinese_remainder_theorem(solutions, [factor for factor in set(factors)])
     return [x]  
 
 if __name__ == '__main__':
-    a = 76 
-    n = 102
+    a = int(input("Ingrese un número a: "))
+    n = int(input("Ingrese un número n: "))
 
     result = sqrt_mod_composed(a, n)
     if result:
         print("Las raíces cuadradas de", a, "módulo", n, "son", result)
     else:
         print("No hay raíces cuadradas de", a, "módulo", n)
+
+    
